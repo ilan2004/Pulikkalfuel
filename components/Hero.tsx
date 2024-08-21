@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className={`${styles.heroContainer} ${styles.heroContainerMd} ${styles.heroContainerLg} ${styles.heroContainerXl}`}>
       <div className={`${styles.heroContent} ${styles.heroContentXl}`}>
-      <p className={`${styles.heroText} ${styles.heroTextXl}`}>
+      <p className={`${styles.heroText}`}>
           Nayara Energy network
         </p>
         <div className={styles.titlebox}>

@@ -1,67 +1,169 @@
 /* Hero.module.css */
 
+/* Base styles */
 .heroContainer {
-    max-width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 8rem;
+}
+
+.heroContainerMd {
+  gap: 7rem;
+}
+
+.heroContainerLg {
+  padding-top: 5rem;
+}
+
+.heroContainerXl {
+  flex-direction: row;
+}
+
+.heroContent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+}
+
+.heroContentXl {
+  width: 50%;
+}
+
+.heroTitle {
+  font-weight: 700;
+  font-size: 3.25rem;
+}
+
+.heroTitleLg {
+  font-size: 5.5rem;
+}
+
+.heroText {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  color: #b0b0b0;
+}
+
+.heroTextXl {
+  max-width: 32.5rem;
+}
+
+.titlebox {
+  padding: 0px 30px;
+  background-color: #15447d;
+  color: #fff;
+  border-radius: 7px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+/* Responsive Breakpoints */
+
+/* Small devices (500px and below) */
+@media (max-width: 500px) {
+  .heroContainer {
     padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    padding-top: 2.5rem;
-    padding-bottom: 8rem;
+    gap: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem; /* Smaller font size for small screens */
+  }
+
+  .heroTitleLg {
+    font-size: 3rem; /* Adjust for smaller screens */
+  }
+
+  .heroText {
+    font-size: 0.875rem; /* Slightly smaller text for readability */
+    max-width: 100%;
+  }
+
+  .heroTextXl {
+    max-width: 100%; /* Adjust max-width for small screens */
+  }
+
+  .titlebox {
+    padding: 0px 15px; /* Adjust padding for smaller screens */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+/* Existing breakpoints remain unchanged */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .heroContainer {
+    padding: 0 2rem;
+    gap: 6rem;
+  }
+  
+  .heroTitle {
+    font-size: 4rem;
+  }
+  
+  .heroText {
+    font-size: 1.25rem;
   }
   
   .heroContainerMd {
-    gap: 7rem;
+    gap: 8rem;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .heroContainer {
+    padding-top: 3.5rem;
+    padding-bottom: 10rem;
+  }
+  
+  .heroTitle {
+    font-size: 4.5rem;
+  }
+  
+  .heroText {
+    font-size: 1.5rem;
   }
   
   .heroContainerLg {
-    padding-top: 5rem;
+    padding-top: 6rem;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .heroContainer {
+    padding: 0 4rem;
+    gap: 8rem;
+  }
+  
+  .heroTitle {
+    font-size: 5rem;
+  }
+  
+  .heroText {
+    font-size: 1.75rem;
   }
   
   .heroContainerXl {
     flex-direction: row;
   }
   
-  .heroContent {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 20;
-    flex: 1;
-    flex-direction: column;
-    width: 100%;
-  }
-  
   .heroContentXl {
     width: 50%;
   }
-  
-  .heroTitle {
-    font-weight: 700;
-    font-size: 3.25rem;
-  }
-  
-  .heroTitleLg {
-    font-size: 5.5rem;
-  }
-  
-  .heroText {
-    font-weight: 400;
-    font-size: 1rem;
-    margin-top: 1.5rem;
-    color: #b0b0b0;
-  }
-  
-  .heroTextXl {
-    max-width: 32.5rem;
-  }
-  .titlebox{
-    padding: 0px 30px 0px 30px;
-    background-color: #15447d;
-    color: #fff;
-    border-radius: 7px 7px 7px 7px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-  }
-  
+}

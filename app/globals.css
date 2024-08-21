@@ -158,3 +158,33 @@ body {
 .text-foreground {
   color:   #fff!important; /* Set the color to white */
 }
+/* Add this to your global CSS or module CSS file */
+.pumpContainer {
+  @apply h-full w-full min-w-[1100px] bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl;
+}
+
+.pumpContent {
+  @apply flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10;
+}
+
+.pumpTitle {
+  @apply text-2xl lg:text-3xl xl:text-4xl font-bold text-white;
+}
+
+.pumpSubtitle {
+  @apply text-sm lg:text-base xl:text-lg text-gray-200;
+}
+
+.pumpPeopleJoined {
+  @apply text-xs lg:text-sm xl:text-base text-gray-300;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pumpContainer {
+    min-width: auto;
+    background-size: cover; /* Adjust background size */
+    border-radius:40px ;
+
+  }
+}
