@@ -1,0 +1,67 @@
+/* Hero.module.css */
+
+.heroContainer {
+    max-width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 8rem;
+  }
+  
+  .heroContainerMd {
+    gap: 7rem;
+  }
+  
+  .heroContainerLg {
+    padding-top: 5rem;
+  }
+  
+  .heroContainerXl {
+    flex-direction: row;
+  }
+  
+  .heroContent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .heroContentXl {
+    width: 50%;
+  }
+  
+  .heroTitle {
+    font-weight: 700;
+    font-size: 3.25rem;
+  }
+  
+  .heroTitleLg {
+    font-size: 5.5rem;
+  }
+  
+  .heroText {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    color: #b0b0b0;
+  }
+  
+  .heroTextXl {
+    max-width: 32.5rem;
+  }
+  .titlebox{
+    padding: 0px 30px 0px 30px;
+    background-color: #15447d;
+    color: #fff;
+    border-radius: 7px 7px 7px 7px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  
