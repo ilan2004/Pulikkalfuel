@@ -6,11 +6,19 @@ const Hero = () => {
   return (
     <section className={`${styles.heroContainer} ${styles.heroContainerMd} ${styles.heroContainerLg} ${styles.heroContainerXl}`}>
       <div className={`${styles.heroContent} ${styles.heroContentXl}`}>
-      <p className={`${styles.heroText}`}>
+      <Image 
+          src="/nayara.png" 
+          alt="Nayara Energy" 
+          width={100} // Adjust the width as needed
+          height={50} // Adjust the height as needed
+          className={styles.nayaraImage} // Optionally, add a class for further styling
+        />
+        <p className={`${styles.heroText}`}>
           Nayara Energy network
         </p>
+
         <div className={styles.titlebox}>
-        <h1 className={`${styles.heroTitle} ${styles.heroTitleLg}`}>Pulikkal fuels</h1>
+          <h1 className={`${styles.heroTitle} ${styles.heroTitleLg}`}>Pulikkal fuels</h1>
         </div>
       </div>
     </section>
