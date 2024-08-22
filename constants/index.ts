@@ -103,8 +103,9 @@ export const FOOTER_LINKS = [
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
-    { label: 'Admin Officer', value: '123-456-7890' },
-    { label: 'Email Officer', value: 'Pulikkalfuels@akinthil.com' },
+    { label: 'Phone number', value: '91 90616 70782', towards: 'tel:+919061670782' },
+    { label: 'Email', value: 'Pulikkalfuels@gmail.com', towards: 'mailto:Pulikkalfuels@gmail.com' },
+    { label: 'Address', value: 'Musliyarangadi, Nediyiruppu PO, Malappuram, Kerala pin-673638', towards: 'https://www.google.com/maps/search/?api=1&query=Musliyarangadi,+Nediyiruppu+PO,+Malappuram,+Kerala+673638' },
   ],
 };
 
