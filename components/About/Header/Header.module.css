@@ -1,0 +1,21 @@
+    /* Header.module.css */
+.Header {
+    background-image: url('/meeting.jpg'); /* Path to the image in the public folder */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 300px; /* Set the height of the header; adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Adds a subtle shadow for better text visibility */
+  }
+  
+  /* Optional heading styling */
+  .h1 {
+    font-size: 3rem; /* Adjust the font size as needed */
+    margin: 0; /* Removes default margin */
+    padding: 0;
+  }
+  
