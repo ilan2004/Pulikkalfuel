@@ -25,24 +25,22 @@ const Footer = () => {
               </FooterColumn>
             ))}
 
-            <div className="flex flex-col gap-5 flex-wrap">
-              <FooterColumn title={FOOTER_CONTACT_INFO.title}>
-                {FOOTER_CONTACT_INFO.links.map((link) => (
-                  <Link
-                  href={link.towards}
-                    key={link.label}
-                    className="flex gap-4 md:flex-col lg:flex-row flex-wrap"
-                  >
-                    <p className="whitespace-nowrap">
-                      {link.label}:
-                    </p>
-                    <p className="medium-14 whitespace-nowrap text-blue-70">
-                      {link.value}
-                    </p>
-                  </Link>
-                ))}
-              </FooterColumn>
-            </div>
+<div className="flex flex-col gap-5 flex-wrap max-w-full sm:max-w-xs">
+  <FooterColumn title={FOOTER_CONTACT_INFO.title}>
+    {FOOTER_CONTACT_INFO.links.map((link) => (
+      <Link
+        href={link.towards}
+        key={link.label}
+        className="flex gap-4 md:flex-col lg:flex-row flex-wrap max-w-full sm:max-w-sm"
+      >
+        <p className="flex-shrink-0">{link.label}:</p>
+        <p className="medium-14 text-blue-70 break-words"> {/* Updated to allow wrapping */}
+          {link.value}
+        </p>
+      </Link>
+    ))}
+  </FooterColumn>
+</div>
 
             <div className="flex flex-col gap-5">
               <FooterColumn title={SOCIALS.title}>
@@ -72,11 +70,12 @@ type FooterColumnProps = {
 
 const FooterColumn = ({ title, children }: FooterColumnProps) => {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5 max-w-full sm:max-w-xs"> {/* Add max width classes */}
       <h4 className="bold-18 whitespace-nowrap">{title}</h4>
       {children}
     </div>
   )
 }
+
 
 export default Footer

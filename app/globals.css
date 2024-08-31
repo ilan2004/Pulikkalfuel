@@ -199,6 +199,7 @@ body {
   max-width: 1440px;
   padding-left: 5rem;
   padding-right: 5rem;
+
 }
 .Achieve{
   margin-top: 0;
@@ -211,4 +212,12 @@ body {
   font-size: 64px;
 
   line-height: 120%;
+}
+@media screen and (max-width: 479px) {
+  .Achieve{
+      font-size: 35px;
+  }
+  .get-app{
+    gap:2rem;
+  }
 }
