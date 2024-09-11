@@ -1,9 +1,9 @@
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: '/', key: 'home', label: 'Home' },
-  { href: '/About', key: 'About us ', label: 'About us ' },
-  { href: '/', key: 'services', label: 'Services' },
-  { href: '/', key: 'contact_us', label: 'Contact Us' },
+  { href: '/', key: 'home', label: 'Home' },           // Scrolls to section with id="home"
+  { href: '/About', key: 'about_us', label: 'About us' },  // Scrolls to section with id="about"
+  { href: '#services', key: 'services', label: 'Services' }, // Scrolls to section with id="services"
+  { href: '#contact', key: 'contact_us', label: 'Contact Us' }, // Scrolls to section with id="contact"
 ];
 
 // CAMP SECTION

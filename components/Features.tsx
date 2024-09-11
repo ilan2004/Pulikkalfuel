@@ -4,6 +4,7 @@ import React from 'react'
 
 const Features = () => {
   return (
+    <section id='services'>
     <section className="flex-row flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24">
       <div className="max-container padding-container relative w-full flex justify-center">
 
@@ -30,6 +31,7 @@ const Features = () => {
           </ul>
         </div>
       </div>
+      </section>
     </section>
   )
 }
